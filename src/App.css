@@ -51,10 +51,15 @@ h1{
   font-size: 60px;
 }
 .card-container{
+  position: relative;
   border: black solid 1px;
   box-sizing: border-box;
   width: 300px;
   text-align: center;
+  transition: 0.3s;
+}
+.card-container:hover{
+  box-shadow: 3px 3px 12px rgba(75, 75, 75, 0.7);
 }
 .card-container img{
   max-width: 100%;
@@ -64,4 +69,42 @@ h1{
 }
 .card-container p{
   font-family: 'Red Hat Text', sans-serif;
+}
+.favoritesoff{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: none;
+  background: grey;
+  cursor: pointer;
+}
+.favoriteson{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: none;
+  background: yellow;
+  cursor: pointer;
+}
+.changes{
+  border-radius: none;
+  background: white;
+  width: 200px;
+  padding: 10px;
+  margin-left: 100px;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+h3{
+  font-size: 40px;
+  font-family: 'Cormorant', serif;
+  margin-left: 100px;
 }
